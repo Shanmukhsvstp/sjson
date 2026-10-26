@@ -43,7 +43,8 @@ public class Main {
         SJson sJson = SJson.create().set("d", sJsonArray).set("w", 2);
         sJson.set("w", 5);
         sJson.set("idkk",sJsonArray1);
-        System.out.println(sJson.toJson());
+        sJson.set("hihi",json);
+        System.out.println(sJson.toPrettyJson());
 
 
 

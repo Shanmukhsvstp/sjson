@@ -10,6 +10,7 @@ import java.util.List;
 /**
  * A JSON array. Mutable, not thread-safe once mutated.
  */
+
 public final class SJsonArray {
 
     private final JsonNode node;
@@ -159,8 +160,8 @@ public final class SJsonArray {
         return this;
     }
 
-    // Stores a deep copy, so later changes to `value` don't affect this array.
-    public SJsonArray add(SJson value) {
+    // Stores a deep copy, so future changes to `value` don't affect this array.
+            public SJsonArray add(SJson value) {
         if (value != null && value.rawNode().isMissingNode()) {
             throw new IllegalArgumentException("Cannot add a missing value");
         }
@@ -173,7 +174,7 @@ public final class SJsonArray {
         return this;
     }
 
-    // Stores a deep copy, so later changes to `value` don't affect this array.
+    // Stores a deep copy, so future changes to `value` don't affect this array.
     public SJsonArray add(SJsonArray value) {
         requireArray().add(
                 value == null
