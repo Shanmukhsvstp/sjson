@@ -4,7 +4,7 @@ A small wrapper around Jackson for reading, navigating and building JSON with a 
 
 Requires Java 17+.
 
-Click [here](https://sjson.psssvst.com) for the complete documentation 
+> Click [here](https://sjson.psssvst.com) for the complete documentation 
 
 ## Install
 
